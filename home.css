@@ -9,45 +9,46 @@ body{
 	text-align: center;
 	background-color: #BDB76B;
 	border-radius: 10px;
-	margin: 0.5em;
-	margin-bottom: 0em;
-	padding: 0.5em;
+	margin: 5px;
+	margin-bottom: 0px;
+	padding: 5px;
 	color: #800000;
 }
 
 /*====NAVIGATION====*/
-nav.nav{
-	
+div.nav{
+	margin-top: 5px;
+	background-color: #BDB76B;
+	padding: 2px;
 }
 
-nav.nav ul{
+div.nav ul{
 	text-align: center;
 	list-style: none;
 	vertical-align: middle;
-	background-color: #BDB76B;
 	border-radius: 10px;
-	margin: 0.5em;
-	margin-top: 0.5em;
-	padding: 1em;
+	margin: 5px;
+	margin-top: 5px;
+	padding: 10px;
 }
 
-nav.nav ul li{
+div.nav ul li{
 	display: inline;
 	margin: 2px;
 	padding: 5px;
 	vertical-align: middle;	
 }
 
-nav.nav ul li a{
+div.nav ul li a{
 	text-decoration: none;
 	color: #DF8F04;
 	background-color: #431A16;
-	margin: 0.6em;
-	padding: 0.7em; 
+	margin: 6px;
+	padding: 7px; 
 	border-radius: 5px;
 }
 
-nav.nav ul li a:hover{
+div.nav ul li a:hover{
 	color: #431A16;
 	background-color: #DF8F04;
 	
@@ -55,26 +56,36 @@ nav.nav ul li a:hover{
 
 /*====Content Heading====*/
 div{
-	background-color: #BDB76B;
 	border-radius: 10px;
-	margin: 0.5em;
-	margin-bottom: 0em;
-	padding: 1em;
+	margin: 5px;
+	margin-bottom: 0px;
+	padding: 10px;
 	color: #800000;
 }
 
-div.post div{
-	display: inline;
-	background-color: #AFEEEE;
-	padding: 0.5em;
-	margin: 0.2em;
-}
-div.post div a{
-	color: black;
-	padding: 0.2em;
+div.sidebar{
+	background-color: #e5e4d7;
+	margin-left: 10px;
+	margin-right: 5px;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	padding: 5px;
+	font-size: 105%;
+	float: right;
+	width: 300px;
+	clear: right;
 }
 
-div.post div.float_right{
-	float: right;
-	margin-top: 0em;
+div.text {
+	background-color: #e5e4d7;
+	margin-left: 5px;
+	margin-right: 320px;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	padding: 5px;
+	padding-top: 2px;
+	font-size: 110%;
 }
+
