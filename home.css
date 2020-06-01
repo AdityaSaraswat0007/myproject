@@ -43,8 +43,8 @@ div.nav ul li a{
 	text-decoration: none;
 	color: #DF8F04;
 	background-color: #431A16;
-	margin: 6px;
-	padding: 7px; 
+	margin: 5px;
+	padding: 6px; 
 	border-radius: 5px;
 }
 
@@ -89,3 +89,11 @@ div.text {
 	font-size: 110%;
 }
 
+
+div.intro{
+	background-color: #e5e4d7;
+}
+
+div.intro p{
+	color: black;
+}
