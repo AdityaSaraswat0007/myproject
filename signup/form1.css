@@ -1,0 +1,212 @@
+body{
+    background:url("digital.gif");
+    width:100%;
+    height:100%;
+    background-size: cover;
+    transition: all 1s;
+}	
+section{
+	height:250px;
+	width:500px;
+	position:absolute;
+	margin:auto;
+	left:0px;
+	bottom:0px;
+	top:0px;
+	right:0px;
+	transform:scale(0.5);
+	transition: 4s;
+	background-color: rgba(255,255,255,0.5);
+}
+#submit{
+	position: absolute;
+	background-color: transparent;
+	height:40px;
+	width:80px;
+	top:55%;
+	border-radius: 5px;
+	color:white;
+	border:1.5px solid white;
+}
+#submit1{
+	position: absolute;
+	background-color: transparent;
+	height:40px;
+	width:80px;
+	top:55%;
+	border-radius: 5px;
+	color:white;
+	border:1.5px solid white;
+}
+#text{
+	position: absolute;
+	top:40%;
+}
+.text{
+	height:250px;
+	width:250px;
+	position:absolute;
+    display: flex;
+    color: white;
+    font-size:20px;
+    justify-content: center;
+}
+.text1{
+	height:250px;
+	width:250px;
+	position:absolute;
+    display: flex;
+    color: white;
+    font-size:20px;
+    left:250px;
+    justify-content: center;
+}
+#form1h{
+	height:250px;
+	width:250px;
+	position:absolute;
+	left:250px;
+    display: flex;
+    color: white;
+    font-size:20px;
+    justify-content: center;
+}
+input[type="submit"]{
+	cursor:pointer;
+}
+#formh{
+	height:250px;
+	width:250px;
+	position:absolute;
+    display: flex;
+    color: white;
+    font-size:20px;
+    justify-content: center;
+}
+#form{
+	height:300px;
+	width:225px;
+	position:absolute;
+    top:-25px;
+    right:250px;
+	display: flex;
+	justify-content: center;
+	background-color: white;
+	transition-duration:0.5s;
+}
+#form1{
+	height:300px;
+	width:225px;
+	position:absolute;
+    top:-25px;
+    right:250px;
+	display: flex;
+	justify-content: center;
+	background-color:white;
+	transition-duration:0.5s; 
+}
+.input:nth-child(1){
+    position: absolute;
+    height:30px;
+    width:180px;
+    font-weight:600;
+    right:20px;
+    text-indent: 10px;
+	top:30%;
+	font-size: 12px;
+}
+.input:nth-child(2){
+    position: absolute;
+    height:30px;
+    width:180px;
+    font-weight:600;
+    text-indent: 10px;
+	top:45%;
+	right:20px;
+	font-size: 12px;
+}
+.input:nth-child(3){
+    position: absolute;
+    height:35px;
+    width:80px;
+    font-weight:600;
+    background-color: rgba(255,0,0,0.6);
+	top:60%;
+	font-size: 12px;
+	border:none;
+	border-radius: 3px;
+}
+a{
+	position:absolute;
+	top:75%;
+	font-size: 14px;
+
+}
+.input1:nth-child(1){
+    position: absolute;
+    height:30px;
+    width:180px;
+    font-weight:600;
+    text-indent: 10px;
+	top:19%;
+	right:20px;
+	font-size: 12px;
+}
+#valid{
+	position: absolute;
+	top:61%;
+	color:red;
+	left:3vw;
+	font-size: 14px;
+}
+#Uvalid{
+	position: absolute;
+	top:51%;
+	color:red;
+	left:3vw;
+	font-size: 12px;
+}
+.input1:nth-child(2){
+    position: absolute;
+    height:30px;
+    width:180px;
+    right:20px;
+    font-weight:600;
+    text-indent: 10px;
+	top:37%;
+	font-size: 12px;
+}
+.button:disabled{
+	text-decoration: none;
+	appearance:none;
+}
+.input1:nth-child(3){
+    position: absolute;
+    height:30px;
+    width:180px;
+    font-weight:600;
+    text-indent: 10px;
+	top:55%;
+	right:20px;
+	font-size: 12px;
+}
+.input1:nth-child(4){
+    position: absolute;
+    height:35px;
+    width:80px;
+    font-weight:600;
+    background-color: rgba(255,0,0,0.6);
+	top:74%;
+	right:70px;
+	font-size: 12px;
+	cursor:pointer;
+	border:none;
+	border-radius: 3px;
+}
+
+.input:nth-child(3):hover{
+	box-shadow: 0px 0px 4px 0.4px rgb(255,0,0);
+}
+.input1:nth-child(4):hover{
+	box-shadow: 0px 0px 4px 0.4px rgb(255,0,0);
+}

@@ -1,0 +1,90 @@
+<html>
+<head>
+	<title>form</title>
+	<link rel="stylesheet" href="form1.css">
+</head>
+<body onload="size()">
+	<section id="section">
+		<span id="form1h">
+			<div id="text">Don't have an account</div>
+			<input type="submit" value="Sign up" id="submit" onclick="r_slide()" />
+		</span>
+		<span id="formh">
+            <div id="text">Have an account?</div>
+			<input type="submit" value="Log in" id="submit" onclick="l_slide()" />
+            
+		</span>
+		<span id="form1">
+			<form method="post" action="http://localhost:1000/phpfiles/form1.php" onsubmit="return validate()">
+            <input type="name" placeholder="Username" name="username" class="input1" required/>
+            <input type="email" name="email" placeholder="Email" class="input1" required/>
+            <input type="password" placeholder="Password" name="pass" class="input1" id="pass" required/>
+            <input type="submit" value="Sign up" class="input1" id="button"/>
+            <p id="Uvalid"></p>
+            <p id="valid"></p>
+        </form>
+		</span>
+		<span>
+			<form id="form" method="post" action="#">
+			<input type="name" name="username" placeholder="Username" class="input"/>
+            <input type="password" placeholder="Password" name="pass" class="input"/>
+            <input type="submit" value="Log in" class="input"/>
+            <a href="forgot.html">Forgot Password?</a></form>
+		</span>
+	</section>
+
+    <script>
+        function validate(){
+        var str=document.getElementById('pass').value;
+        var button=document.getElementById("button");
+        if(str.length<8)
+        {
+          document.getElementById("valid").innerHTML="password is weak";
+          return false; 
+        }
+        else if(str.search(/[0-9]/)==-1){
+           document.getElementById("valid").innerHTML="Must contain one number";
+          return false;
+        }
+        else if(str.search(/[a-z]/)==-1){
+           document.getElementById("valid").innerHTML="Must contain one lowercase-letter";
+          return false;
+        }
+        else if(str.search(/[A-Z]/)==-1){
+           document.getElementById("valid").innerHTML="Must contain one uppercase-letter";
+          return false;
+        }
+        else if(str.search(/[!\@\#\$\%\^\&\*\(\)\|\.\,\<\>\?\/\=\+\_\-\;\:\"\'\[\]\{\}\\\~\`]/)==-1){
+           document.getElementById("valid").innerHTML="Must contain one special character";
+          return false;
+        }
+        else
+        {
+         
+          document.getElementById("valid").innerHTML="";
+          return true;
+        }
+      }
+    	function size(){
+    		var a;
+    		a=document.getElementById("section");
+    		a.style.transform='scale(1)';
+    	}
+        function r_slide()
+        {
+              document.getElementById("form1").style.transform='translate(225px)';
+              document.getElementById("form1").style.visibility="visible";
+              document.getElementById("form").style.visibility="hidden";
+              document.getElementById("form").style.transform='translate(225px)';
+        }
+        function l_slide()
+        {
+              document.getElementById("form1").style.transform='translate(0px)';
+              document.getElementById("form1").style.visibility="hidden";
+              document.getElementById("form").style.visibility="visible";
+              document.getElementById("form").style.transform='translate(0px)';
+        }
+
+    </script>
+</body>
+</html>
