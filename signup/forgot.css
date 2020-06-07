@@ -1,0 +1,61 @@
+header{
+	width:90vw;
+	height:50px;
+	position:fixed;
+	display:flex;
+	float:left;
+	font-size: 30px;
+	padding-left: 25px;
+	padding-top:25px; 
+	background-color: rgba(0,0,0,0.1);
+	color:grey;
+	border-bottom: 5px solid #ffcc00;
+}
+section{
+   position: absolute;
+   height:70vw;
+   width:92.5vw;
+   max-height: 413.83px;
+   top:18%;
+   font-size: 25px;
+   text-indent: 15px;
+   color:grey;
+   padding-top:10px;
+   display: block;
+   background-color: rgba(0,0,0,0.1);
+}
+#form{
+	height:61.8vw;
+	width:90.5vw;
+	position: relative;
+	left: 0.9vw;
+	top:12px;
+	max-height:369.8px;
+	font-size:18px;
+	background-color:#ffffff;
+
+}
+
+label{
+	position: relative;
+	padding:20px 0px;
+	display: block;
+	text-indent: 5vw ;
+	width:35vw;
+}
+#comment{
+	padding:0px;
+}
+#input{
+	position: relative;
+    display: block;
+	left:5vw;
+	width:35vw;
+}
+input[type="submit"]
+{
+	background-color:#eeaa00;
+    position:absolute;
+    bottom:20px;
+    left:37vw;
+}
