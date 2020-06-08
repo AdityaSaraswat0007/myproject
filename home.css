@@ -165,3 +165,140 @@ header{
 		font-size:6px;
 	}
 }
+
+#form1{
+	height:70%;
+	width:50%;
+	position:absolute;
+    top:15%;
+    left:25%;
+	display: flex;
+	justify-content: center;
+	background-color:white;
+	visibility: hidden;
+	border:5px solid #F507DD;
+}
+
+.input1:nth-child(1){
+    position: absolute;
+    height:10%;
+    width:50%;
+    font-weight:600;
+    text-indent: 10px;
+	top:15%;
+	left: 25%;
+	font-size: 12px;
+}
+
+.input1:nth-child(2){
+    position: absolute;
+    height:10%;
+    width:50%;
+    left: 25%;
+    font-weight:600;
+    text-indent: 10px;
+	top:35%;
+	font-size: 12px;
+}
+
+.input1:nth-child(3){
+    position: absolute;
+    height:10%;
+    width:50%;
+    font-weight:600;
+    text-indent: 10px;
+	top:55%;
+	left: 25%;
+	font-size: 12px;
+}
+
+.input1:nth-child(4){
+    position: absolute;
+    height:10%;
+    width:15%;
+    font-weight:600;
+    background-color: rgba(255,0,0,0.6);
+	top:75%;
+	left: 42.5%;
+	font-size: 12px;
+	cursor:pointer;
+	border:none;
+	border-radius: 3px;
+}
+
+.input1:nth-child(4):hover{
+	box-shadow: 0px 0px 4px 0.4px rgb(255,0,0);
+}
+
+#form{
+	height:70%;
+	width:50%;
+	position:absolute;
+    top:15%;
+    left:25%;
+	display: flex;
+	justify-content: center;
+	background-color:white;
+	visibility: hidden;
+	border:5px solid #F507DD;
+}
+
+.input:nth-child(1){
+    position: absolute;
+    height:10%;
+    width:50%;
+    font-weight:600;
+    text-indent: 10px;
+	top:15%;
+	left: 25%;
+	font-size: 12px;
+}
+.input:nth-child(2){
+    position: absolute;
+    height:10%;
+    width:50%;
+    left: 25%;
+    font-weight:600;
+    text-indent: 10px;
+	top:35%;
+	font-size: 12px;
+}
+.input:nth-child(3){
+    position: absolute;
+    height:10%;
+    width:15%;
+    font-weight:600;
+    background-color: rgba(255,0,0,0.6);
+	top:55%;
+	left: 42.5%;
+	font-size: 12px;
+	cursor:pointer;
+	border:none;
+	border-radius: 3px;
+}
+
+.input:nth-child(3):hover{
+	box-shadow: 0px 0px 4px 0.4px rgb(255,0,0);
+}
+
+#valid{
+	position: absolute;
+	top:61%;
+	color:red;
+	left:3vw;
+	font-size: 14px;
+}
+#Uvalid{
+	position: absolute;
+	top:51%;
+	color:red;
+	left:3vw;
+	font-size: 12px;
+}
+
+a{
+	position:absolute;
+	top:75%;
+	font-size: 14px;
+	left: 41.7%
+}
