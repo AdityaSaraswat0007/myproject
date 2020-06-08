@@ -1,53 +1,28 @@
 <html>
-    <head>
-        <title>
-            Unin
-        </title>
-        <link rel="stylesheet" type="text/css" href="home.css">
-    </head>
-    <body>
-        <div id="heading">
-            <h1>Welcome to The World of Exploration</h1>
-        </div>
-        <div class="nav">
-            <ul>
-                <li><a href="dashbord/dashbord.html"><b>Dashboard</b></a></li>
-                <li><a href="organization/organization.html"><b>Organizations</b></a></li>
-                <li><a href="university/university.html"><b>Universities ranking</b></a></li>
-                <li><a href="project/project.html"><b>Open Project</b></a></li>
-                <li><a href="jobs/jobs.html"><b>Jobs</b></a></li>
-                <li><a href="domains/domains.html"><b>Domains</b></a></li>
-                <li><a href="signup/form1.html"><b>SignIn</b></a></li>
-                <li><a href="signup/form1.html"><b>SignUp</b></a></li>
-            </ul>
-        </div>
-        <div class = "sidebar">
-            <h3>Your Progress</h3>
-            <hr>
-            <ul>
-                <li>Triccos :</li>
-                <li>Current branch Rank :</li>
-                <li>Learning Progress :</li>
-            </ul>
-        </div>
-        <div class = "intro">
-            <h3>Unin</h3>
-            <hr>
-            <p><b>This website is made for Developers, Students, Instructors, Company to make the process of learning and recruitment process easy and fast enough.</b></p>
-        </div>
-        <div class = "sidebar">
-            <h3>Your Contacts</h3>
-            <hr>
-            <ul>
-                <li>Aditya Saraswat</li>
-                <li>Ayush Kulshrestha</li>
-                <li>XYZ</li>
-            </ul>
-        </div>
-        <div class = "text">
-            <h3>Jobs/Updates/Announcements</h3>
-            <hr>
-            <p></p>
-        </div>
-    </body>
+<head>
+	<title> Unin - The world of exploration</title>
+	<link rel="stylesheet" href="home.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<input type="checkbox" id ="menu"/>
+		<span class = "logo">
+				<h1>Unin</h1>
+				<moto>The World Of Exploration</moto>
+		</span>
+		<ul>
+			<li class="log1">Login</li>
+			<li class="log">Register</li>
+		</ul>
+		<label for="menu" class="check" onclick="openMenu()">=</label>
+	</header>
+	<script type="text/javascript">
+		var btn = document.getElementByClassName("log1");
+		function openMenu(){
+			btn.style.visibility="visible";
+			console.log("done");
+		}
+	</script>
+</body>
 </html>
