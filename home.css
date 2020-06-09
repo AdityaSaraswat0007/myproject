@@ -86,7 +86,7 @@ header{
 	width:100%;
 	margin:0px;
 	margin-left: 0px;
-	height:50%;
+	height:60%;
 	margin-right: 0px;
 	background: linear-gradient(
 		rgba(180,120,225,0.6) 20%, 
@@ -111,60 +111,7 @@ header{
 	color:rgba(255,255,255,1);
 	cursor:pointer;
 }
-@media (max-width: 1430px){
-	header ul li.log1{
-		left:81%;
-	}
-}
-@media (max-width: 1195px){
-	header ul li.log1{
-		left:79%;
-	}
-}
-@media (max-width: 1130px){
-	header ul li.log1{
-		left:77%;
-	}
-}
-@media (max-width: 1000px){
-	header ul li.log1{
-		left:75%;
-	}
-}
-@media (max-width: 900px){
-	header ul li.log1{
-		left:72%;
-	}
-}
-@media (max-width: 750px){
-	header ul li.log1{
-		left:65%;
-	}
-}
-@media (max-width: 625px){
-	header ul li.log1{
-		left:58%;
-	}
-}
-@media (max-width: 500px){
-	header ul li.log1{
-		visibility: hidden;
-	}
-	header ul li.log{
-		visibility: hidden;
-	}
-	header label.check{
-		visibility: visible;
-	}
-	header span.logo h1{
-		font-size: 30px; 
-		letter-spacing: 3px;
-		height:36px;
-	}
-	header span.logo moto{
-		font-size:6px;
-	}
-}
+
 
 #form1{
 	height:70%;
@@ -301,4 +248,121 @@ a{
 	top:75%;
 	font-size: 14px;
 	left: 41.7%
+}
+
+/*==== content Part Started =====*/
+div.content{
+	height: 100px;
+	width: 100px;
+	z-index: -1;
+	position: absolute;
+	height: 60%;
+	width: 100%;
+	top: 40%;
+}
+
+/*==== adding Wave ====*/
+.wave{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+/*====image added ====*/
+.cap{
+	position: absolute;
+	right: 0;
+	top: 20%;
+	z-index: 1000;
+}
+
+
+@media (max-width: 1430px){
+	header ul li.log1{
+		left:81%;
+	}
+}
+@media (max-width: 1195px){
+	header ul li.log1{
+		left:79%;
+	}
+}
+@media (max-width: 1130px){
+	header ul li.log1{
+		left:77%;
+	}
+}
+@media (max-width: 1000px){
+	header ul li.log1{
+		left:75%;
+	}
+	header img.cap{
+		height:400px;
+		top: 40%;
+		width: 350px;
+	}
+}
+@media (max-width: 900px){
+	header{
+		height: 50%;
+	}
+	header ul li.log1{
+		left:72%;
+	}
+	header img.cap{
+		height:350px;
+		top: 40%;
+		width: 300px;
+	}
+}
+@media (max-width: 750px){
+	header{
+		height: 50%;
+	}
+	header ul li.log1{
+		left:65%;
+	}
+	header img.cap{
+		height:350px;
+		top: 40%;
+		width: 300px;
+	}
+}
+@media (max-width: 625px){
+	header{
+		height: 50%;
+	}
+	header ul li.log1{
+		left:58%;
+	}
+	header img.cap{
+		height:300px;
+		top: 40%;
+		width: 250px;
+	}
+}
+@media (max-width: 500px){
+	header{
+		height:40%;
+	}
+	header ul li.log1{
+		visibility: hidden;
+	}
+	header ul li.log{
+		visibility: hidden;
+	}
+	header label.check{
+		visibility: visible;
+	}
+	header span.logo h1{
+		font-size: 30px; 
+		letter-spacing: 3px;
+		height:36px;
+	}
+	header span.logo moto{
+		font-size:6px;
+	}
+	header img.cap{
+		height:200px;
+		top: 50%;
+	}
 }
