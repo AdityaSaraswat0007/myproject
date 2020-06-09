@@ -1,23 +1,25 @@
 <html>
 <head>
-	<title> Unin - The world of exploration</title>
-	<link rel="stylesheet" href="home.css">
-	<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+  <title> Unin - The world of exploration</title>
+  <link rel="stylesheet" href="home.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-	<header>
-		<input type="checkbox" id ="menu"/>
-		<span class = "logo">
-				<h1>Unin</h1>
-				<moto>The World Of Exploration</moto>
-		</span>
-		<ul>
-			<li class="log1" onclick="l_slide()">Login</li>
-			<li class="log" onclick="r_slide()">Register</li>
-		</ul>
-		<label for="menu" class="check" onclick="openMenu()">=</label>
-	</header>
-	<span id="form1">
+  <header>
+    <input type="checkbox" id ="menu"/>
+    <span class = "logo">
+        <h1>Unin</h1>
+        <moto>The World Of Exploration</moto>
+    </span>
+    <ul>
+      <li class="log1" onclick="l_slide()">Login</li>
+      <li class="log" onclick="r_slide()">Register</li>
+    </ul>
+    <label for="menu" class="check" onclick="openMenu()">=</label>
+    <img class = "cap"src="images/cap1.png">
+    <svg class = "wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,256L24,245.3C48,235,96,213,144,181.3C192,149,240,107,288,117.3C336,128,384,192,432,208C480,224,528,192,576,160C624,128,672,96,720,112C768,128,816,192,864,234.7C912,277,960,299,1008,272C1056,245,1104,171,1152,133.3C1200,96,1248,96,1296,122.7C1344,149,1392,203,1416,229.3L1440,256L1440,320L1416,320C1392,320,1344,320,1296,320C1248,320,1200,320,1152,320C1104,320,1056,320,1008,320C960,320,912,320,864,320C816,320,768,320,720,320C672,320,624,320,576,320C528,320,480,320,432,320C384,320,336,320,288,320C240,320,192,320,144,320C96,320,48,320,24,320L0,320Z"></path></svg>
+  </header>
+  <span id="form1">
       <form method="post" action="http://localhost:1000/phpfiles/form1.php" onsubmit="return validate()">
             <input type="name" placeholder="Username" name="username" class="input1" required/>
             <input type="email" name="email" placeholder="Email" class="input1" required/>
@@ -28,52 +30,59 @@
         </form>
     </span>
     <span>
-		<form id="form" method="post" action="#">
-			<input type="name" name="username" placeholder="Username" class="input"/>
-        	<input type="password" placeholder="Password" name="pass" class="input"/>
-        	<input type="submit" value="Log in" class="input"/>
-        	<a href="forgot.html">Forgot Password?</a>
+    <form id="form" method="post" action="#">
+      <input type="name" name="username" placeholder="Username" class="input"/>
+          <input type="password" placeholder="Password" name="pass" class="input"/>
+          <input type="submit" value="Log in" class="input"/>
+          <a href="forgot.html">Forgot Password?</a>
         </form>
-	</span>
-	<script type="text/javascript">
-		
-		function openMenu(){
-			var btn = document.getElementByClassName("log1");
-			btn.style.visibility="visible";
-			console.log("done");
-		}
-		function validate(){
-        	var str=document.getElementById('pass').value;
-        	var button=document.getElementById("button");
-        	if(str.length<8)
-        	{
-          	document.getElementById("valid").innerHTML="password is weak";
-          	return false; 
-        	}
-        	else if(str.search(/[0-9]/)==-1){
-           	document.getElementById("valid").innerHTML="Must contain one number";
-          	return false;
-        	}
-        	else if(str.search(/[a-z]/)==-1){
-           	document.getElementById("valid").innerHTML="Must contain one lowercase-letter";
-          	return false;
-        	}
-        	else if(str.search(/[A-Z]/)==-1){
-           	document.getElementById("valid").innerHTML="Must contain one uppercase-letter";
-          	return false;
-        	}
-        	else if(str.search(/[!\@\#\$\%\^\&\*\(\)\|\.\,\<\>\?\/\=\+\_\-\;\:\"\'\[\]\{\}\\\~\`]/)==-1){
-           	document.getElementById("valid").innerHTML="Must contain one special character";
-          	return false;
-        	}
-        	else
-        	{
+  </span>
+
+  <div class = "content">
+    
+  </div>
+
+
+
+  <script type="text/javascript">
+    
+    function openMenu(){
+      var btn = document.getElementByClassName("log1");
+      btn.style.visibility="visible";
+      console.log("done");
+    }
+    function validate(){
+          var str=document.getElementById('pass').value;
+          var button=document.getElementById("button");
+          if(str.length<8)
+          {
+            document.getElementById("valid").innerHTML="password is weak";
+            return false; 
+          }
+          else if(str.search(/[0-9]/)==-1){
+            document.getElementById("valid").innerHTML="Must contain one number";
+            return false;
+          }
+          else if(str.search(/[a-z]/)==-1){
+            document.getElementById("valid").innerHTML="Must contain one lowercase-letter";
+            return false;
+          }
+          else if(str.search(/[A-Z]/)==-1){
+            document.getElementById("valid").innerHTML="Must contain one uppercase-letter";
+            return false;
+          }
+          else if(str.search(/[!\@\#\$\%\^\&\*\(\)\|\.\,\<\>\?\/\=\+\_\-\;\:\"\'\[\]\{\}\\\~\`]/)==-1){
+            document.getElementById("valid").innerHTML="Must contain one special character";
+            return false;
+          }
+          else
+          {
          
-          	document.getElementById("valid").innerHTML="";
-          	return true;
-        	}
-      	}
-      	function r_slide()
+            document.getElementById("valid").innerHTML="";
+            return true;
+          }
+        }
+        function r_slide()
         {
               document.getElementById("form1").style.visibility="visible";
               document.getElementById("form").style.visibility="hidden";
@@ -85,6 +94,6 @@
               document.getElementById("form").style.visibility="visible";
               document.getElementById("form").style.transform='translate(0px)';
         }
-	</script>
+  </script>
 </body>
 </html>
