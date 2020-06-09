@@ -86,7 +86,7 @@ header{
 	width:100%;
 	margin:0px;
 	margin-left: 0px;
-	height:50%;
+	height:60%;
 	margin-right: 0px;
 	background: linear-gradient(
 		rgba(180,120,225,0.6) 20%, 
@@ -111,6 +111,171 @@ header{
 	color:rgba(255,255,255,1);
 	cursor:pointer;
 }
+
+
+#form1{
+	height:70%;
+	width:50%;
+	position:absolute;
+    top:15%;
+    left:25%;
+	display: flex;
+	justify-content: center;
+	background-color:white;
+	visibility: hidden;
+	border:5px solid #F507DD;
+}
+
+.input1:nth-child(1){
+    position: absolute;
+    height:10%;
+    width:50%;
+    font-weight:600;
+    text-indent: 10px;
+	top:15%;
+	left: 25%;
+	font-size: 12px;
+}
+
+.input1:nth-child(2){
+    position: absolute;
+    height:10%;
+    width:50%;
+    left: 25%;
+    font-weight:600;
+    text-indent: 10px;
+	top:35%;
+	font-size: 12px;
+}
+
+.input1:nth-child(3){
+    position: absolute;
+    height:10%;
+    width:50%;
+    font-weight:600;
+    text-indent: 10px;
+	top:55%;
+	left: 25%;
+	font-size: 12px;
+}
+
+.input1:nth-child(4){
+    position: absolute;
+    height:10%;
+    width:15%;
+    font-weight:600;
+    background-color: rgba(255,0,0,0.6);
+	top:75%;
+	left: 42.5%;
+	font-size: 12px;
+	cursor:pointer;
+	border:none;
+	border-radius: 3px;
+}
+
+.input1:nth-child(4):hover{
+	box-shadow: 0px 0px 4px 0.4px rgb(255,0,0);
+}
+
+#form{
+	height:70%;
+	width:50%;
+	position:absolute;
+    top:15%;
+    left:25%;
+	display: flex;
+	justify-content: center;
+	background-color:white;
+	visibility: hidden;
+	border:5px solid #F507DD;
+}
+
+.input:nth-child(1){
+    position: absolute;
+    height:10%;
+    width:50%;
+    font-weight:600;
+    text-indent: 10px;
+	top:15%;
+	left: 25%;
+	font-size: 12px;
+}
+.input:nth-child(2){
+    position: absolute;
+    height:10%;
+    width:50%;
+    left: 25%;
+    font-weight:600;
+    text-indent: 10px;
+	top:35%;
+	font-size: 12px;
+}
+.input:nth-child(3){
+    position: absolute;
+    height:10%;
+    width:15%;
+    font-weight:600;
+    background-color: rgba(255,0,0,0.6);
+	top:55%;
+	left: 42.5%;
+	font-size: 12px;
+	cursor:pointer;
+	border:none;
+	border-radius: 3px;
+}
+
+.input:nth-child(3):hover{
+	box-shadow: 0px 0px 4px 0.4px rgb(255,0,0);
+}
+
+#valid{
+	position: absolute;
+	top:61%;
+	color:red;
+	left:3vw;
+	font-size: 14px;
+}
+#Uvalid{
+	position: absolute;
+	top:51%;
+	color:red;
+	left:3vw;
+	font-size: 12px;
+}
+
+a{
+	position:absolute;
+	top:75%;
+	font-size: 14px;
+	left: 41.7%
+}
+
+/*==== content Part Started =====*/
+div.content{
+	height: 100px;
+	width: 100px;
+	z-index: -1;
+	position: absolute;
+	height: 60%;
+	width: 100%;
+	top: 40%;
+}
+
+/*==== adding Wave ====*/
+.wave{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+/*====image added ====*/
+.cap{
+	position: absolute;
+	right: 0;
+	top: 20%;
+	z-index: 1000;
+}
+
+
 @media (max-width: 1430px){
 	header ul li.log1{
 		left:81%;
@@ -130,23 +295,55 @@ header{
 	header ul li.log1{
 		left:75%;
 	}
+	header img.cap{
+		height:400px;
+		top: 40%;
+		width: 350px;
+	}
 }
 @media (max-width: 900px){
+	header{
+		height: 50%;
+	}
 	header ul li.log1{
 		left:72%;
 	}
+	header img.cap{
+		height:350px;
+		top: 40%;
+		width: 300px;
+	}
 }
 @media (max-width: 750px){
+	header{
+		height: 50%;
+	}
 	header ul li.log1{
 		left:65%;
 	}
+	header img.cap{
+		height:350px;
+		top: 40%;
+		width: 300px;
+	}
 }
 @media (max-width: 625px){
+	header{
+		height: 50%;
+	}
 	header ul li.log1{
 		left:58%;
 	}
+	header img.cap{
+		height:300px;
+		top: 40%;
+		width: 250px;
+	}
 }
 @media (max-width: 500px){
+	header{
+		height:40%;
+	}
 	header ul li.log1{
 		visibility: hidden;
 	}
@@ -163,5 +360,9 @@ header{
 	}
 	header span.logo moto{
 		font-size:6px;
+	}
+	header img.cap{
+		height:200px;
+		top: 50%;
 	}
 }
