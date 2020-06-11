@@ -86,7 +86,7 @@ header{
 	width:100%;
 	margin:0px;
 	margin-left: 0px;
-	height:60%;
+	height:50%;
 	margin-right: 0px;
 	background: linear-gradient(
 		rgba(180,120,225,0.6) 20%, 
@@ -261,19 +261,6 @@ div.content{
 	top: 40%;
 }
 
-/*==== adding Wave ====*/
-.wave{
-	position: absolute;
-	bottom: 0;
-	left: 0;
-}
-/*====image added ====*/
-.cap{
-	position: absolute;
-	right: 0;
-	top: 20%;
-	z-index: 1000;
-}
 
 
 @media (max-width: 1430px){
