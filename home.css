@@ -118,12 +118,12 @@ header{
 }
 #form1:before{
 	position: absolute;
-	top:-0.5%;
+	top:0%;
 	content:'';
 	transform:skew(2deg,2deg);
 	left:-0.5%;
 	right:-0.5%;
-	bottom:-0.5%;
+	bottom:0%;
 	z-index:-1;
 	background: linear-gradient(315deg,#e91e63,#5d02ff);
 }
@@ -187,12 +187,12 @@ header{
 }
 #form:before{
 	position: absolute;
-	top:-0.5%;
+	top:0%;
 	content:'';
 	transform:skew(2deg,2deg);
 	left:-0.5%;
 	right:-0.5%;
-	bottom:-0.5%;
+	bottom:0%;
 	z-index:-1;
 	background: linear-gradient(315deg,#e91e63,#5d02ff);
 }
@@ -309,9 +309,11 @@ a{
 }
 #valid{
 	position: absolute;
-	top:61%;
+	top:63%;
+	display: flex;
+	justify-content: center;
 	color:red;
-	left:3vw;
+	width:100%;
 	font-size: 14px;
 }
 #Uvalid{
