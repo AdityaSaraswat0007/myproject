@@ -1,97 +1,111 @@
 <html>
 <head>
-  <title> Unin - The world of exploration</title>
-  <link rel="stylesheet" href="home.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+	<title> Unin - The world of exploration</title>
+	<link rel="stylesheet" href="home.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-  <header>
-    <input type="checkbox" id ="menu"/>
-    <span class = "logo">
-        <h1>Unin</h1>
-        <moto>The World Of Exploration</moto>
-    </span>
-    <ul>
-      <li class="log1" onclick="l_slide()">Login</li>
-      <li class="log" onclick="r_slide()">Register</li>
-    </ul>
-    <label for="menu" class="check" onclick="openMenu()">=</label>
-  </header>
-  <span id="form1">
-      <form method="post" action="http://localhost:1000/phpfiles/form1.php" onsubmit="return validate()">
+	<header>
+		<input type="checkbox" id ="menu"/>
+		<span class = "logo" onclick="hide()">
+				<h1>Unin</h1>
+				<div class="moto">The World Of Exploration</div>
+		</span>
+		<ul>
+			<li class="log1" onclick="r_slide()">Login</li>
+			<li class="log" onclick="l_slide()">Register</li>
+		</ul>
+		<label for="menu" class="check" onclick="r_slide()">=</label>
+    <svg  class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"> 
+</svg>
+
+	</header>
+  <span id="back">
+	<span id="form1">
+			<form method="post" action="http://localhost:1000/phpfiles/form1.php" onsubmit="return validate()">
             <input type="name" placeholder="Username" name="username" class="input1" required/>
             <input type="email" name="email" placeholder="Email" class="input1" required/>
             <input type="password" placeholder="Password" name="pass" class="input1" id="pass" required/>
             <input type="submit" value="Sign up" class="input1" id="button"/>
             <p id="Uvalid"></p>
             <p id="valid"></p>
+            <span class="switch1" onclick="r_slide()"><i class="fa fa-angle-left" aria-hidden="true"></i>
+            </span>
+            <span class="switch2" onclick="hide()"><i class="fa fa-times" aria-hidden="true"></i>
+            </span>
         </form>
-    </span>
-    <span>
-    <form id="form" method="post" action="#">
-      <input type="name" name="username" placeholder="Username" class="input"/>
-          <input type="password" placeholder="Password" name="pass" class="input"/>
-          <input type="submit" value="Log in" class="input"/>
-          <a href="forgot.html">Forgot Password?</a>
-        </form>
+		</span>
+	<span>
+			<form id="form" method="post" action="#">
+			<input type="name" name="username" placeholder="Username" class="input"/>
+            <input type="password" placeholder="Password" name="pass" class="input"/>
+            <input type="submit" value="Log in" class="input"/>
+            <a href="forgot.html">Forgot Password?</a>
+            <span class="switch" onclick="l_slide()"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+            <span class="switch2" onclick="hide()"><i class="fa fa-times" aria-hidden="true"></i>
+            </span>
+          </form>
+
+		</span>
   </span>
-
-  <div class = "content">
-    
-  </div>
-
-
-
-  <script type="text/javascript">
-    
-    function openMenu(){
-      var btn = document.getElementByClassName("log1");
-      btn.style.visibility="visible";
-      console.log("done");
-    }
-    function validate(){
-          var str=document.getElementById('pass').value;
-          var button=document.getElementById("button");
-          if(str.length<8)
-          {
-            document.getElementById("valid").innerHTML="password is weak";
-            return false; 
-          }
-          else if(str.search(/[0-9]/)==-1){
-            document.getElementById("valid").innerHTML="Must contain one number";
-            return false;
-          }
-          else if(str.search(/[a-z]/)==-1){
-            document.getElementById("valid").innerHTML="Must contain one lowercase-letter";
-            return false;
-          }
-          else if(str.search(/[A-Z]/)==-1){
-            document.getElementById("valid").innerHTML="Must contain one uppercase-letter";
-            return false;
-          }
-          else if(str.search(/[!\@\#\$\%\^\&\*\(\)\|\.\,\<\>\?\/\=\+\_\-\;\:\"\'\[\]\{\}\\\~\`]/)==-1){
-            document.getElementById("valid").innerHTML="Must contain one special character";
-            return false;
-          }
-          else
-          {
-         
-            document.getElementById("valid").innerHTML="";
-            return true;
-          }
-        }
-        function r_slide()
+  <div class="data" onclick="hide()"></div>
+	<script type="text/javascript">
+		function openMenu(){
+			var btn = document.getElementByClassName("log1");
+			btn.style.visibility="visible";
+			console.log("done");
+		}
+		function validate(){
+        var str=document.getElementById('pass').value;
+        var button=document.getElementById("button");
+        if(str.length<8)
         {
-              document.getElementById("form1").style.visibility="visible";
-              document.getElementById("form").style.visibility="hidden";
-              document.getElementById("form").style.transform='translate(225px)';
+          document.getElementById("valid").innerHTML="password is weak";
+          return false; 
         }
-        function l_slide()
+        else if(str.search(/[0-9]/)==-1){
+           document.getElementById("valid").innerHTML="Must contain one number";
+          return false;
+        }
+        else if(str.search(/[a-z]/)==-1){
+           document.getElementById("valid").innerHTML="Must contain one lowercase-letter";
+          return false;
+        }
+        else if(str.search(/[A-Z]/)==-1){
+           document.getElementById("valid").innerHTML="Must contain one uppercase-letter";
+          return false;
+        }
+        else if(str.search(/[!\@\#\$\%\^\&\*\(\)\|\.\,\<\>\?\/\=\+\_\-\;\:\"\'\[\]\{\}\\\~\`]/)==-1){
+           document.getElementById("valid").innerHTML="Must contain one special character";
+          return false;
+        }
+        else
+        {
+         
+          document.getElementById("valid").innerHTML="";
+          return true;
+        }
+      }
+      function r_slide()
         {
               document.getElementById("form1").style.visibility="hidden";
               document.getElementById("form").style.visibility="visible";
-              document.getElementById("form").style.transform='translate(0px)';
+              document.getElementById("back").style.visibility="visible";
         }
-  </script>
+        function l_slide()
+        {
+
+              document.getElementById("form1").style.visibility="visible";
+              document.getElementById("form").style.visibility="hidden";
+              document.getElementById("back").style.visibility="visible";
+        }
+        function hide()
+        {
+              document.getElementById("form1").style.visibility="hidden";
+              document.getElementById("form").style.visibility="hidden";
+              document.getElementById("back").style.visibility="hidden";
+        }
+	</script>
 </body>
 </html>
